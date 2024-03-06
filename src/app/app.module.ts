@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { RazasComponent } from './razas/razas.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { ErrorPersonalizadoComponent } from './error-personalizado/error-personalizado.component';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 
 const appRoutes:Routes =[
@@ -30,7 +31,7 @@ const appRoutes:Routes =[
     ErrorPersonalizadoComponent
   ],
   imports: [
-    BrowserModule,  FormsModule, RouterModule.forRoot(appRoutes), HttpClientModule,
+    BrowserModule,  FormsModule, RouterModule.forRoot(appRoutes), HttpClientModule,NgImageSliderModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]

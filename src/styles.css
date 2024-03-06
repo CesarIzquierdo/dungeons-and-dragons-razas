@@ -41,3 +41,60 @@
     bottom: 0px;
     width: 100%;
   }
+
+  /* En el archivo .css o .scss del componente */
+.slider-container {
+  max-width: 800px; /* Establece el ancho máximo del slider */
+  margin: 0 auto; /* Centra el slider horizontalmente */
+}
+
+.ng-image-slider img {
+  max-width: 100%; /* Ajusta el tamaño máximo de las imágenes para que no se desborden del contenedor */
+  height: auto; /* Permite que las imágenes mantengan su proporción de aspecto */
+  border-radius: 8px; /* Agrega bordes redondeados a las imágenes */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave a las imágenes */
+  transition: transform 0.2s ease-in-out; /* Agrega una transición suave al cambiar la escala de las imágenes */
+}
+
+.ng-image-slider img:hover {
+  transform: scale(1.05); /* Escala ligeramente la imagen cuando el mouse está encima para un efecto de zoom */
+}
+
+.ng-image-slider .ng-image-slider-content {
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente para los títulos de las imágenes */
+  padding: 10px; /* Añade espacio alrededor del contenido del título */
+  position: absolute; /* Posiciona el contenido del título encima de la imagen */
+  bottom: 0; /* Sitúa el contenido del título en la parte inferior */
+  left: 0; /* Sitúa el contenido del título en la parte izquierda */
+  width: 100%; /* Ajusta el ancho del contenido del título al 100% del contenedor */
+  color: #fff; /* Color del texto */
+  font-size: 16px; /* Tamaño de fuente del título */
+  text-align: center; /* Centra el texto horizontalmente */
+  border-bottom-left-radius: 8px; /* Agrega bordes redondeados en la esquina inferior izquierda */
+  border-bottom-right-radius: 8px; /* Agrega bordes redondeados en la esquina inferior derecha */
+}
+
+.ng-image-slider .ng-image-slider-content p {
+  margin: 0; /* Elimina el margen por defecto del párrafo dentro del contenido del título */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas con el mismo ancho */
+  grid-gap: 10px; /* Espacio entre las celdas */
+}
+
+.grid-item {
+  border-radius: 8px;
+  overflow: hidden; /* Evita que las imágenes sobresalgan de los bordes */
+}
+
+.grid-item img {
+  width: 100%; /* La imagen ocupa el ancho completo de la celda */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px); /* Levanta ligeramente la imagen en hover */
+}
