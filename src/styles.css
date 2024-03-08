@@ -9,7 +9,12 @@
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
   }
-  
+  .icono2 {
+    width: 40px; /* Cambia el tamaño según sea necesario */
+    height: 40px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
   .imagenes {
     width: 400px; /* Cambia el tamaño según sea necesario */
     height: 400px;
@@ -78,10 +83,17 @@
   margin: 0; /* Elimina el margen por defecto del párrafo dentro del contenido del título */
 }
 
+
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Tres columnas con el mismo ancho */
   grid-gap: 10px; /* Espacio entre las celdas */
+}
+
+.grid-item {
+  border-radius: 8px;
+  overflow: hidden; /* Evita que las imágenes sobresalgan de los bordes */
 }
 
 .grid-item {
@@ -97,4 +109,101 @@
 
 .grid-item:hover {
   transform: translateY(-5px); /* Levanta ligeramente la imagen en hover */
+}
+
+
+
+/*grid 2*/
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Tres columnas con el mismo ancho */
+  grid-gap: 10px; /* Espacio entre las celdas */
+}
+
+.grid-item2 {
+  border: 1px solid #9d9b9b;
+  padding: 5px;
+  align-items: center; /* Alinea verticalmente los elementos secundarios en el centro */
+
+}
+
+.imagenesR   {
+  max-width: 70%; /* Ajusta la imagen para que su ancho máximo sea del 100% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Evita el espacio adicional debajo de la imagen */
+  align-items: center;
+
+
+}
+
+.text2 {
+  grid-column: 5 / -1; /* Texto en las columnas restantes */
+}
+
+
+
+
+
+
+/*menu izquierdo*/
+.menu-container {
+  position: fixed;
+  top: 9%;
+  left: 0%;
+  background-color: #b44a3b; /* Cambia esto por el color que desees */
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(195, 99, 99, 0.1);
+  
+  max-height: calc(100% - 20px); /* Altura máxima del menú */
+  overflow-y: auto; /* Habilitar el desplazamiento vertical si el contenido excede la altura máxima */
+}
+
+.menu-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1;
+}
+
+.menu-container ul li {
+  margin-bottom: 2px;
+}
+
+.menu-container ul li a {
+  text-decoration: none;
+  color: #ffffff; /* Cambia esto por el color que desees */
+  font-weight: bold;
+}
+
+.menu-container ul li a:hover {
+  color: #e9db1a; /* Cambia esto por el color de hover que desees */
+}
+
+.collapsed {
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* Estilo para el botón */
+.menu-toggle-button {
+  background-color: #e98578;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px; /* Añadir margen inferior para separarlo del menú */
+}
+
+/* Estilo para el botón cuando está activo */
+.menu-toggle-button:hover {
+  background-color: #cf7367;
+}
+
+/* sin decorar*/
+a.no-decoration {
+  text-decoration: none;
+  color: inherit;
+  font-style: italic;
+  text-align: center;
+  text-shadow: black;  
 }

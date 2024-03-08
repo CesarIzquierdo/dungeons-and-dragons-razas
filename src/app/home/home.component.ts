@@ -34,4 +34,39 @@ export class HomeComponent {
   }
   ];
 
+
+  // menu comlapsable 
+  isCollapsed = false;
+
+  toggleMenu() {
+      this.isCollapsed = !this.isCollapsed;
+  }
+  menuItems = [
+    { title: 'Humano', section: 'Humano' },
+    { title: 'Elfo', section: 'Elfo' },
+    { title: 'Enanos', section: 'Enanos' },
+    { title: 'Medianos', section: 'Medianos' },
+    { title: 'Draconidos', section: 'Draconidos' },
+    { title: 'Gnomos', section: 'Gnomos' },
+    { title: 'Semiorcos', section: 'Semiorcos' },
+    { title: 'Semielfos', section: 'Semielfos' },
+    { title: 'Tieflings', section: 'Tieflings' },
+    { title: 'Aarakocra', section: 'Aarakocra' },
+    { title: 'Goliaths', section: 'Goliaths' },
+    { title: 'Genasi', section: 'Genasi' },
+    { title: 'Tritones', section: 'Tritones' },
+    { title: 'Yuan-ti', section: 'Yuan-ti' },
+    { title: 'Tabaxi', section: 'Tabaxi' },
+    { title: 'Lizardfolk', section: 'Lizardfolk' },
+    { title: 'Firbolgs', section: 'Firbolgs' },
+    { title: 'Kenkus', section: 'Kenkus' },
+    { title: 'Tortles', section: 'Tortles' },
+    { title: 'Shifters', section: 'Shifters' },
+    { title: 'Warforged', section: 'Warforged' },
+    { title: 'Changelings', section: 'Changelings' },
+    { title: 'Kalashtar', section: 'Kalashtar' },
+    { title: 'Aasimar', section: 'Aasimar' },
+    { title: 'Minotauros', section: 'Minotauros' },
+    { title: 'Centauros', section: 'Centauros' },
+  ];
 }

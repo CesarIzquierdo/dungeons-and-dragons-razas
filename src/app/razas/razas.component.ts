@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./razas.component.css']
 })
 export class RazasComponent {
-  titulo = "Razas de dnd 5e";
+  
 }
