@@ -6,836 +6,94 @@
         <ng-image-slider [images]="imageObject" #nav></ng-image-slider>
     </div>
 
-    
-
-    <div class="menu-container" [ngClass]="{'collapsed': isCollapsed}">
-      <button class="menu-toggle-button" (click)="toggleMenu()">Colapsar</button>
-        <ul>
-            <li *ngFor="let item of menuItems">            
-            <a [href]="'#' + item.section">{{item.title}}</a>          
-            </li>
-            <li>h</li>
-        </ul>     
-          
-    </div>
-
 
     <div style="margin: 0 auto; width: 94%"> 
       <p>{{titulo}}</p>
       <div class="grid-container">
         
-        <a [href]="'#Humano'" class="no-decoration"> 
+        <a [href]="'/Humanos'" class="no-decoration"> 
           <div class="grid-item"><img src="assets/img/razas/h.jpg" alt="Imagen 1">Humanos</div>
         </a>
-        <a [href]="'#Elfo'" class="no-decoration">
+        <a [href]="'/Elfos'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/elf.jpg" alt="Imagen 2">Elfos</div>
         </a>
-        <a [href]="'#Enanos'" class="no-decoration">
+        <a [href]="'/Enanos'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/en.jpg" alt="Imagen 3">Enanos</div>
         </a>
-        <a [href]="'#Medianos'" class="no-decoration">
+        <a [href]="'/Medianos'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/me.jpg" alt="Imagen 4">Medianos</div>
         </a>
-        <a [href]="'#Draconidos'" class="no-decoration">
+        <a [href]="'/Draconidos'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/dra.jpg" alt="Imagen 4">Draconidos</div>
         </a>
-        <a [href]="'#Gnomos'" class="no-decoration">
+        <a [href]="'/Gnomos'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/gn.jpg" alt="Imagen 1">Gnomos</div>
         </a>
-        <a [href]="'#Semiorcos'" class="no-decoration">
+        <a [href]="'/Semiorcos'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/sorc.jpg" alt="Imagen 2">Semi Orcos</div>
         </a>
-        <a [href]="'#Semielfos'" class="no-decoration">
+        <a [href]="'/Semielfos'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/selfo.jpg" alt="Imagen 3">Semi Elfos</div>
         </a>
-        <a [href]="'#Tieflings'" class="no-decoration">
+        <a [href]="'/Tieflings'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/Tie.jpg" alt="Imagen 4">Tieflings</div>
         </a>
-        <a [href]="'#Aarakocra'" class="no-decoration">
+        <a [href]="'/Aarakocra'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/aara.jpg" alt="Imagen 4">Aarakocra</div>
         </a>
-        <a [href]="'#Goliaths'" class="no-decoration">
+        <a [href]="'/Goliaths'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/gol.jpg" alt="Imagen 1">Goliaths</div>
         </a>
-        <a [href]="'#Genasi'" class="no-decoration">
+        <a [href]="'/Genasi'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/gena.jpg" alt="Imagen 2">Genasi</div>
         </a>
-        <a [href]="'#Tritones'" class="no-decoration">
+        <a [href]="'/Tritones'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/tri.jpg" alt="Imagen 3">Tritones</div>
         </a>
-        <a [href]="'#Yuan-ti'" class="no-decoration">
+        <a [href]="'/Yuan-ti'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/Yuan.jpg" alt="Imagen 4">Yuan-ti</div>
         </a>
-        <a [href]="'#Tabaxi'" class="no-decoration">
+        <a [href]="'/Tabaxi'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/Tabaxi.jpg" alt="Imagen 1">Tabaxi</div>
         </a>
-        <a [href]="'#Lizardfolk'" class="no-decoration">
+        <a [href]="'/Lizardfolk'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/Lizardfolk.jpg" alt="Imagen 2">Lizardfolk</div>
         </a>
-        <a [href]="'#Firbolgs'" class="no-decoration">
+        <a [href]="'/Firbolgs'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/Firbolgs.jpg" alt="Imagen 3">Firbolgs</div>
         </a>
-        <a [href]="'#Kenkus'" class="no-decoration">
+        <a [href]="'/Kenkus'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/Kenkus.jpg" alt="Imagen 4">Kenkus</div>
         </a>
-        <a [href]="'#Tortles'" class="no-decoration">
+        <a [href]="'/Tortles'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/Tortle.jpg" alt="Imagen 4">Tortles</div>
         </a>
-        <a [href]="'#Shifters'" class="no-decoration">
+        <a [href]="'/Shifters'" class="no-decoration">
           <div class="grid-item"><img src="assets/img/razas/Shifters.jpg" alt="Imagen 4">Shifters</div>
         </a>
-        <a [href]="'#Warforged'" class="no-decoration">  
+        <a [href]="'/Warforged'" class="no-decoration">  
           <div class="grid-item"><img src="assets/img/razas/Warforged.jpg" alt="Imagen 1">Warforged</div>
         </a>
-        <a [href]="'#Changelings'" class="no-decoration">  
+        <a [href]="'/Changelings'" class="no-decoration">  
           <div class="grid-item"><img src="assets/img/razas/Changelings.jpg" alt="Imagen 2">Changelings</div>
         </a>
-        <a [href]="'#Kalashtar'" class="no-decoration">  
+        <a [href]="'/Kalashtar'" class="no-decoration">  
           <div class="grid-item"><img src="assets/img/razas/Kalashtar.jpg" alt="Imagen 3">Kalashtar</div>
         </a>
-        <a [href]="'#Aasimar'" class="no-decoration">  
+        <a [href]="'/Aasimar'" class="no-decoration">  
           <div class="grid-item"><img src="assets/img/razas/Aasimar.jpg" alt="Imagen 4">Aasimar</div>
         </a>
-        <a [href]="'#Minotauros'" class="no-decoration">  
+        <a [href]="'/Minotauros'" class="no-decoration">  
           <div class="grid-item"><img src="assets/img/razas/Minotauros.jpg" alt="Imagen 4">Minotauros</div>
         </a>
-        <a [href]="'#Centauros'" class="no-decoration">  
+        <a [href]="'/Centauros'" class="no-decoration">  
           <div class="grid-item"><img src="assets/img/razas/centauro.jpg" alt="Imagen 4">Centauros</div>
         </a>
         </div>
     <br>
   
   
-    <div id="Humano" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/h3.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6> 
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-    
-    <div id="Elfo" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/elf.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-
-    <div id="Enanos" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/en2.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-    
-    <div id="Medianos" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/me.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-
-    <br><br>
-    
-    <div id="Draconidos" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/dra.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-
-
-
-    <div id="Gnomos" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/gn2.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-    
-    <div id="Semiorcos" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/sorc.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-
-    <div id="Semielfos" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/selfo.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-    
-    <div id="Tieflings" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/Tie.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-
-    <div id="Aarakocra" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/aara.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-    
-    <div id="Goliaths" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/gol.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-
-    <div id="Genasi" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/gena.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-    
-    <div id="Tritones" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/tri.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-
-    <div id="Yuan-ti" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/Yuan.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-    
-    <div id="Tabaxi" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/Tabaxi.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-
-    <div id="Lizardfolk" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/Lizardfolk.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-    
-    <div id="Firbolgs" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/Firbolgs.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-
-    <div id="Kenkus" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/Kenkus.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-    
-    <div id="Tortles" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/Tortle.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-
-    <div id="Shifters" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/Shifters.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-    
-    <div id="Warforged" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/Warforged.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-
-    <div id="Changelings" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/Changelings.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-    
-    <div id="Kalashtar" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/Kalashtar.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-
-    <div id="Aasimar" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/Aasimar.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-    
-    <div id="Minotauros" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/Minotauros.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
-
-    <div id="Centauros" class="grid-container">
-      <div class="grid-item imagenesR"><img  src="assets/img/razas/centauro.jpg" alt="Imagen"></div>
-      
-      <div class="grid-item text">
-        <h6>Raza</h6>     
-      </div>      
-    </div>
-    <br>
-    <div class="grid-container2">
-      <div class="grid-item text">
-        <h6>Aumento de Puntuaciones de Característica</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Tamaño</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Velocidad</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Habilidades</h6>     
-      </div> 
-      <div class="grid-item text">
-        <h6>Competencias</h6>     
-      </div> 
-    </div>
-    
-    <br><br>
+ 
     
     
 
